@@ -23,20 +23,21 @@
 ---
 ## 🚀 執行方式
 ```bash
-# 安裝必要套件
+# 1️⃣ 安裝必要套件（建議先建立虛擬環境）
 pip install -r requirements.txt
 
-# 資料前處理
+# 2️⃣ 資料前處理：清洗欄位、補值、排除異常與資料洩漏欄位
 python src/preprocessing.py
 
-# 資料切分
+# 3️⃣ 資料切分：將清洗後資料切為訓練／驗證／測試集，並對y進行 Label Encoding
 python src/split_data.py
 
-# 模型訓練（Gain 80% 特徵 + 手動調參）
+# 4️⃣ 模型訓練：使用 XGBoost，搭配手動調參與 Gain 80% 特徵子集
 python src/train_xgboost.py
 
-# 模型解釋（SHAP 分析）
+# 5️⃣ 模型解釋：透過 SHAP 視覺化模型邏輯與關鍵特徵影響力
 python src/shap_analysis.py
+
 ```
 ---
 
