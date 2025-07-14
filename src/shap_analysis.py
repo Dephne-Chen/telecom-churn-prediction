@@ -17,8 +17,10 @@ os.makedirs("output", exist_ok=True)
 
 # 🔹 載入模型（pipeline_80）
 with open("model/xgb_pipeline_gain80.pkl", "rb") as f:
-    pipeline = pickle.load(f)
-
+    saved_data = pickle.load(f)
+    pipeline = saved_data["pipeline"]
+    selected_features = saved_data["selected_features"]
+    
 # 🔹 載入驗證集
 X_val = pd.read_csv("data/x_origin_val.csv")
 
