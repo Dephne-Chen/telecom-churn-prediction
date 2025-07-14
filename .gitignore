@@ -1,0 +1,32 @@
+# ✅ Python 基本忽略
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ✅ 虛擬環境（推薦用 .venv 命名）
+.venv/
+env/
+venv/
+
+# ✅ VSCode / PyCharm 設定檔（若你有使用）
+.vscode/
+.idea/
+
+# ✅ 輸出檔案與圖片
+output/
+*.png
+*.jpg
+
+# ✅ 模型與中介檔案
+*.pkl
+*.joblib
+*.h5
+
+# ✅ 資料（視情況忽略）
+data/
+*.csv
+*.xlsx
+
+# ✅ Mac 系統檔案
+.DS_Store
