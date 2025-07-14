@@ -30,3 +30,14 @@ data/
 
 # ✅ Mac 系統檔案
 .DS_Store
+
+# ✅ Streamlit 自動產生的暫存與設定檔（如果用得到）
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# ✅ Jupyter Notebook checkpoint（如果有用到 .ipynb）
+.ipynb_checkpoints/
+
+# ✅ Pipenv / Poetry 類型的其他虛擬環境檔案（未來擴充時）
+Pipfile.lock
+poetry.lock
