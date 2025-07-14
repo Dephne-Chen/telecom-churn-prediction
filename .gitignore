@@ -18,10 +18,6 @@ output/
 *.png
 *.jpg
 
-# ✅ 模型檔（保留 Streamlit 用的）
-*.pkl
-!model/model_pipeline_80.pkl
-
 # ✅ 本地資料與測試資料
 data/
 *.csv
