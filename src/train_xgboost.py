@@ -212,6 +212,9 @@ print(confusion_matrix(y_test, y_test_pred_custom))
 
 import pickle
 
-# 📌 儲存最終模型（pipeline_80）為 pkl 檔
-with open("model/xgb_pipeline_gain80.pkl", "wb") as f:
-    pickle.dump(pipeline_80, f)
+with open('model_pipeline_80.pkl', 'wb') as f:
+    pickle.dump({
+        'pipeline': pipeline_80,
+        'selected_features': selected_features_80
+    }, f)
+
