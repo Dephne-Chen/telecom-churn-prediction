@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 st.title("📉 顧客流失預測器")
 
 # —— 載入模型 Pipeline ——
-with open('model/xgb_pipeline_gain80.pkl', 'rb') as f:
+with open('model/model_pipeline_80.pkl', 'rb') as f:
     data = pickle.load(f)
     pipeline = data['pipeline']
     features = data['selected_features']
