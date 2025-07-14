@@ -1,29 +1,30 @@
-# ✅ Python 基本忽略
+# ✅ Python 編譯產物
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 
-# ✅ 虛擬環境（推薦用 .venv 命名）
+# ✅ 虛擬環境（推薦使用 .venv 命名）
 .venv/
 env/
 venv/
 
-# ✅ VSCode / PyCharm 設定檔（若你有使用）
+# ✅ VSCode / PyCharm 設定檔（若有使用）
 .vscode/
 .idea/
 
-# ✅ 輸出檔案與圖片
+# ✅ 輸出圖表與圖檔
 output/
 *.png
 *.jpg
 
-# ✅ 模型與中介檔案
+# ✅ 模型檔（但保留部署用模型）
 *.pkl
 *.joblib
 *.h5
+!model/model_pipeline_80.pkl  # ✅ 保留這個模型檔案供部署使用
 
-# ✅ 資料（視情況忽略）
+# ✅ 資料檔案（視情況可忽略）
 data/
 *.csv
 *.xlsx
@@ -31,13 +32,3 @@ data/
 # ✅ Mac 系統檔案
 .DS_Store
 
-# ✅ Streamlit 自動產生的暫存與設定檔（如果用得到）
-.streamlit/config.toml
-.streamlit/secrets.toml
-
-# ✅ Jupyter Notebook checkpoint（如果有用到 .ipynb）
-.ipynb_checkpoints/
-
-# ✅ Pipenv / Poetry 類型的其他虛擬環境檔案（未來擴充時）
-Pipfile.lock
-poetry.lock
