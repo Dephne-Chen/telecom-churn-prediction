@@ -17,7 +17,7 @@
 |--------|------|
 | `src/` | Python 程式碼（資料前處理、模型訓練、SHAP 分析） |
 | `data/` | 資料樣本 |
-| `output/` | 模型成效圖表、SHAP summary 等圖片 |
+| `output/` | 模型特徵圖表、SHAP summary 等圖片 |
 | `report/` | 專題簡報 |
 
 ---
