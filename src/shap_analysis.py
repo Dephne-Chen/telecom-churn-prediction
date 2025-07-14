@@ -16,7 +16,7 @@ import os
 os.makedirs("output", exist_ok=True)
 
 # 🔹 載入模型（pipeline_80）
-with open("model/xgb_pipeline_gain80.pkl", "rb") as f:
+with open("model/model_pipeline_80.pkl", "rb") as f:
     saved_data = pickle.load(f)
     pipeline = saved_data["pipeline"]
     selected_features = saved_data["selected_features"]
