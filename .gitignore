@@ -4,31 +4,30 @@ __pycache__/
 *.pyo
 *.pyd
 
-# ✅ 虛擬環境（推薦使用 .venv 命名）
+# ✅ 虛擬環境
 .venv/
 env/
 venv/
 
-# ✅ VSCode / PyCharm 設定檔（若有使用）
+# ✅ IDE 設定檔
 .vscode/
 .idea/
 
-# ✅ 輸出圖表與圖檔
+# ✅ 圖表與輸出圖檔
 output/
 *.png
 *.jpg
 
-# ✅ 模型檔（但保留部署用模型）
+# ✅ 模型檔（保留 Streamlit 用的）
 *.pkl
-*.joblib
-*.h5
-!model/model_pipeline_80.pkl  # ✅ 保留這個模型檔案供部署使用
+!model/model_pipeline_80.pkl
 
-# ✅ 資料檔案（視情況可忽略）
+# ✅ 本地資料與測試資料
 data/
 *.csv
 *.xlsx
 
-# ✅ Mac 系統檔案
+# ✅ Mac 系統自動產生的檔案
 .DS_Store
+
 
